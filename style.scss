@@ -1,0 +1,191 @@
+@import url("https://fonts.googleapis.com/css2?family=Play:wght@400;700&family=Playfair+Display+SC:wght@400;700;900&family=Playfair:ital,opsz@0,5..1200;1,5..1200&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@100;300;400;500;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(193, 239, 254);
+  font-family: "Poppins", sans-serif;
+}
+
+.main-section {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .product-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .image-data {
+      background-color: #000;
+      box-shadow: 3px 5px 4px #414141;
+      border-radius: 3px;
+      position: relative;
+      img {
+        height: 32.5rem;
+        // flex-basis: 0px;
+      }
+      .img-control {
+        position: absolute;
+        right: 30px;
+        bottom: 30px;
+      }
+      .img-control {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        .btn {
+          display: inline-block;
+          width: 15px;
+          height: 15px;
+          border-radius: 50%;
+          background-color: #ddd;
+          cursor: pointer;
+        }
+        .active {
+          background-color: #4b4be5;
+        }
+      }
+    }
+    .product-data {
+      // width: 350px;
+      // height: 410px;
+      flex-basis: 400px;
+      background-color: #ffffff;
+      padding: 2.5rem;
+      box-shadow: 2px 3px 2px #7e7e7e;
+      border-radius: 3px;
+      h1 {
+        font-size: 2.4rem;
+        color: #303030;
+        font-weight: bold;
+        margin-bottom: 5px;
+      }
+      .price {
+        font-size: 1.8rem;
+        font-weight: bold;
+        color: #626262;
+      }
+      .discount {
+        display: inline-block;
+        font-size: 1.1rem;
+        font-weight: 600;
+        color: #19ae72;
+        letter-spacing: -1px;
+        margin-bottom: 1rem;
+      }
+      p {
+        font-family: sans-serif;
+        font-size: 0.9rem;
+        font-weight: normal;
+        color: #626262;
+        letter-spacing: 0.5px;
+      }
+
+      .size-select {
+        display: flex;
+        align-items: center;
+        margin-top: 2rem;
+        font-weight: 400;
+        font-size: 18px;
+
+        p {
+          width: 70px;
+          font-size: 18px;
+          color: #202020;
+        }
+        input:checked + span {
+          color: blue;
+          font-weight: 700;
+        }
+        input {
+          display: none;
+        }
+        span {
+          cursor: pointer;
+          margin-right: 10px;
+        }
+      }
+      .color-select {
+        margin-top: 1rem;
+        display: flex;
+        align-items: center;
+        // gap: 25px;
+        p {
+          width: 70px;
+          font-size: 18px;
+          color: #202020;
+        }
+        input:checked + span {
+          transform: scale(1.1);
+          box-shadow: 0 0 0 4px #cbcbcb, 0 0 0 4px #000;
+        }
+        input {
+          display: none;
+        }
+
+        span {
+          display: inline-block;
+          width: 18px;
+          height: 18px;
+          margin-right: 20px;
+          border-radius: 50%;
+          cursor: pointer;
+        }
+        .color-1 {
+          background-color: blue;
+        }
+        .color-2 {
+          background-color: red;
+        }
+        .color-3 {
+          background-color: green;
+        }
+        .color-4 {
+          background-color: pink;
+        }
+      }
+      .quantity-data {
+        margin-top: 1rem;
+        font-size: 18px;
+        color: #202020;
+        input {
+          display: inline-block;
+          width: 65px;
+          border: 2px solid grey;
+          border-radius: 4px;
+          outline: none;
+          padding: 5px 2px;
+          font-family: sans-serif;
+          font-size: 16px;
+          margin-left: 10px;
+          text-align: center;
+        }
+      }
+      .button-section {
+        display: flex;
+        align-items: center;
+        margin-top: 2rem;
+        button {
+          width: 100%;
+          padding: 13px;
+          font-size: 22px;
+          font-weight: 500;
+          border-radius: 2rem;
+          cursor: pointer;
+          border: none;
+          outline: none;
+          background-color: rgb(75, 75, 229);
+          color: #ffffff;
+          transition: all 0.4s;
+        }
+        button:hover {
+          background-color: #3a3ab2;
+        }
+      }
+    }
+  }
+}
